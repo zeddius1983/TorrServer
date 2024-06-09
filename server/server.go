@@ -60,7 +60,7 @@ func Start(port, sslport, sslCert, sslKey string, sslEnabled, roSets, searchWA b
 		os.Exit(1)
 	}
 	// remove old disk caches
-	go cleanCache()
+	//go cleanCache()
 	// set settings http and https ports. Start web server.
 	settings.Port = port
 	settings.SslPort = sslport
